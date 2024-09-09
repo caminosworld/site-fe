@@ -15,6 +15,7 @@
 
 .header {
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .purpose {
@@ -117,7 +118,21 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .main {
+    margin: 8px;
+  }
 
+  .description {
+    max-width: 100%;
+  }
+
+  .purpose {
+    grid-template-columns: 100%;
+  }
+
+  .prepose {
+    grid-template-columns: 100%;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -125,7 +140,6 @@
   .description {
     width: 752px;
     max-width: 100%;
-
   }
 }
 
