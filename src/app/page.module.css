@@ -1,0 +1,143 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em;
+  min-height: 100vh;
+
+  font-family: var(--font);
+}
+
+.description {
+  max-width: var(--max-width);
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+.purpose {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0px;
+  gap: 20px;
+
+  padding-bottom: 20px;
+  border-bottom: 4px solid #204099;
+}
+
+.prepose {
+  display: grid;
+  grid-template-columns: 0.33fr 0.66fr;
+  padding-bottom: 20px;
+  border-bottom: 4px solid #204099;
+}
+
+.howToTitle {
+  padding: 20px 0px;
+  border-bottom: 4px solid #204099;
+}
+
+.steps { 
+  display: grid;
+  grid-template-columns: 0.33333fr 0.66666fr;
+
+  padding: 20px 0px;
+  border-bottom: 4px solid black;
+}
+
+.authors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0px;
+  gap: 20px;
+  padding-top: 200px;
+}
+
+.newsletterContainer {
+  height: 100%;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 20px;
+  border-bottom: 4px dotted #204099;
+}
+
+.news {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  background: transparent;
+  border-bottom: 2px solid rgb(240, 242, 248);
+  padding: 16px 10px;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  color: rgb(13, 17, 23);
+  margin-bottom: 15px;
+  border-radius: 0px;
+}
+
+.errorMessage {
+  color: var(--rojo);
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.successMessage {
+  color: green;
+  font-weight: 700;
+}
+
+.subButton {
+  background-color: #204099;
+  border-radius: 50px;
+  border: none;
+  margin-top: 10px;
+  padding: 15px 20px;
+  align-items: center;
+  
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: white;
+
+  cursor:pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+@media (prefers-reduced-motion) {
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .description {
+    width: 752px;
+    max-width: 100%;
+
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
