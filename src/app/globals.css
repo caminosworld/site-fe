@@ -4,6 +4,10 @@
   --max-width: 1000px;
   --font: "Libre Franklin", sans-serif;
 
+  --blue: #204099;
+  --yellow: #FBB040;
+  --rojo: red;
+
 }
 
 * {

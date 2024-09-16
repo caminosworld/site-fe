@@ -27,7 +27,7 @@ export default function EmailSub() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage("Thank you for subscribing!");
+        setMessage("We're excited to have you on board. Stay tuned!");
         setEmail("");
         setError("");
       } else {
@@ -35,7 +35,7 @@ export default function EmailSub() {
       }
     } catch (error) {
       console.error("Subscription error:", error);
-      setError("Failed to subscribe. Please try again later.");
+      setError("Oops! Something went wrong. We couldn't subscribe you at this time. Please try again later.");
     }
   };
 
@@ -43,7 +43,7 @@ export default function EmailSub() {
     <>
       <div className={styles.newsletterContainer}>
         <div className={styles.newsletterCopy}>
-          <h2>Get on our the waitlist</h2>
+          <h2>Get on the waitlist</h2>
           <div className={styles.newsletterAction}>
             <div className={styles.subscribeContainer}>
               {!message && !error && (

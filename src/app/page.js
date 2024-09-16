@@ -31,8 +31,7 @@ export default function Home() {
             <p>🦄</p>
             <p>
               We believe that every traveler is as individual as their preferred
-              brand of cereal. Let our team work their magic to curate a travel
-              plan tailored to your specific vibe.
+              brand of cereal. 
             </p>
           </div>
           <div>
@@ -48,9 +47,9 @@ export default function Home() {
             Have a better vacation then <em>them</em>.
           </h2>
           <p>
-            We&apos;ve got the link to local informatin, and make it dead simmple for
-            you to book the best trip ever. Connect wwith us for one-on-one
-            support and access to perks -- all for less then a latte.
+            We&apos;ve got the link to local information, and make it dead
+            simple for you to book the best trip ever. Connect with us for
+            one-on-one support and access to perks — all for less then a latte.
           </p>
         </div>
         <div className={styles.howToTitle}>
@@ -77,8 +76,8 @@ export default function Home() {
             <div>
               <h3>2</h3>
               <p>
-                Based on your personality, we&apos;ll create a unique itinerary that
-                fits your taste. No more generic travel plans!
+                Based on your personality, we&apos;ll create a unique itinerary
+                that fits your taste. No more generic travel plans!
               </p>
             </div>
           </div>
@@ -97,12 +96,18 @@ export default function Home() {
         </div>
         <div className={styles.authors}>
           <div>
+            <div className={styles.portraits}>
+              <img src="victoria-port.jpg"></img>
+            </div>
             <h4>Victoria Aguirre</h4>
-            <p>Founder / CEO</p>
+            <p className={styles.titles}>Founder / CEO</p>
           </div>
           <div>
+            <div className={styles.portraits}>
+              <img src="brian-port.jpg"></img>
+            </div>
             <h4>Brian Felix</h4>
-            <p>Founder</p>
+            <p className={styles.titles}>Founder</p>
           </div>
         </div>
         <div>
